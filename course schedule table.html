@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e7e2e2;
+        }
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+            background-color: #ffff;
+        }
+
+        th, td {
+            border: 10px solid #dddd;
+            padding: 13px;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        thead th {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-weight: 1000;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tfoot td {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"> Course Schedule TimeTable</th>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Instructor</th>
+                <th>Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="1">Learning Python</td>
+                <td>8 Weeks</td>
+                <td>Dr. James</td>
+                <td>$35</td>
+            </tr>
+            <tr >
+                <td>UI/UX Design</td>
+                <td>12 Weeks</td>
+                <td>Mrs.Allen</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Basic Web Development</td>
+                <td>8 Weeks</td>
+                <td>Prof. Oke</td>
+                <td>$34</td>
+            </tr>
+           
+            <tr>
+                <td>Database Management</td>
+                <td>10 Weeks</td>
+                <td>Mr. Brown</td>
+                <td>$55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total courses: 4 | Total Fee: $164</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
