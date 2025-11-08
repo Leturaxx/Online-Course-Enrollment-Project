@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course Enrollment - Member 4</title>
+
+  <!-- 
+  =======================================
+  Member 4: Faisal Babangida
+  Task: Headings, Paragraphs & Line Breaks
+  Project: Online Course Enrollment
+  =======================================
+  -->
+
+  <style>
+    /* Type selector styling */
+    h1 {
+      color: black;
+      text-align: center;
+      background-color: lightgrey;
+      padding: 10px;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid black;
+      padding-bottom: 4px;
+      font-family: Verdana, sans-serif;
+    }
+
+    h3 {
+      color: #555;
+      font-family: Verdana, sans-serif;
+    }
+
+    p {
+      color: black;
+      background-color: #f2f2f2;
+      padding: 8px;
+      border-left: 4px solid grey;
+      border-radius: 5px;
+      line-height: 1.6;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      margin: 30px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: black;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="welcomeMessage">Welcome!</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    Welcome to the Online Course Enrollment page.<br>
+    This platform allows students to register for courses easily and access learning materials online.
+  </p>
+  <hr>
+
+  <h2>Available Courses</h2>
+  <h3>Computer Science</h3>
+  <p>
+    The Computer Science program offers a wide range of courses such as Programming, Data Structures, and Web Development.
+  </p>
+
+  <h3>Business Administration</h3>
+  <p>
+    Students in this department can enroll in courses like Management, Accounting, and Marketing.
+  </p>
+  <hr>
+
+  <h2>Enrollment Process</h2>
+  <h3>Step 1: Login</h3>
+  <p>
+    Students must first log in with their registered email address before proceeding with course registration.
+  </p>
+
+  <h3>Step 2: Select Courses</h3>
+  <p>
+    After logging in, students can view the list of available courses and choose the ones they want to register for.<br>
+    A confirmation message will be shown once the enrollment is successful.
+  </p>
+  <hr>
+
+  <h2>Support</h2>
+  <p>
+    For any issues or questions about enrollment, students can contact the support team through the help section.<br>
+    Assistance is available Monday to Friday during school hours.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    The Online Course Enrollment system makes course registration simple, fast, and accessible to all students.
+  </p>
+
+  <script>
+    // Ask for user's name and display it in the main heading
+    const name = prompt("Please enter your name:");
+    const heading = document.getElementById("welcomeMessage");
+
+    if (name && name.trim() !== "") {
+      heading.textContent = "Welcome, " + name + "!";
+    } else {
+      heading.textContent = "Welcome, Guest!";
+    }
+  </script>
+</body>
+</html>
